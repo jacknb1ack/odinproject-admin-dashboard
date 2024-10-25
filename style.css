@@ -118,6 +118,27 @@ body {
   grid-area: aside;
 }
 
+nav ul {
+  padding: 0;
+}
+nav li {
+  padding-left: 30px;
+}
+nav li:hover {
+  background-color: #f1570e;
+}
+
+li a {
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  color: aliceblue;
+}
+
+a:visited {
+  color: aliceblue;
+}
+
 /* header styling */
 .header {
   display: grid;
