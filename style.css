@@ -83,7 +83,6 @@ body {
   grid-template-areas:
     "aside header"
     "aside content";
-  width: 100vw;
 }
 
 .flex {
@@ -156,8 +155,7 @@ a:visited {
 /* header styling */
 .header {
   display: grid;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding: 15px 0 15px 15px;
   grid-template-areas: "search user" "greeting button";
   gap: 5px;
 
@@ -238,4 +236,60 @@ div.avatar {
 
 .avatar img {
   width: 60%;
+}
+
+/* main content container styling */
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "project sidebar";
+  background-color: #e0e0e0;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* project container styling */
+.project {
+  grid-area: project;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "content content";
+  gap: 1rem;
+}
+
+.project h2 {
+  grid-area: title;
+}
+
+.project-card {
+  border-left: 5px solid #f1570e;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 27px -5px;
+  padding: 10px;
+  height: fit-content;
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1rem;
+}
+
+.project-card p {
+  font-size: 0.7rem;
+}
+
+.project-icon {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* sidebar container styling */
+.sidebar {
+  grid-area: sidebar;
 }
