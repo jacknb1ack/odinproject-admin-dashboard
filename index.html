@@ -8,33 +8,33 @@
   </head>
   <body>
     <aside class="nav-bar">
-      <div class="title flex-menu">
+      <div class="title flex">
         <img src="icons/dashboard.svg" alt="dashboard icon" class="icon-large" />
         <h1>Dashboard</h1>
       </div>
       <div class="main-menu">
         <ul class="menu">
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/home.svg" alt="home icon" class="icon-md" />
             <p>Home</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/profile.svg" alt="profile icon" class="icon-md" />
             <p>Profile</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/message.svg" alt="messages icon" class="icon-md" />
             <p>Messages</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/history.svg" alt="history icon" class="icon-md" />
             <p>History</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/tasks.svg" alt="tasks icon" class="icon-md" />
             <p>Tasks</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/community.svg" alt="communities icon" class="icon-md" />
             <p>Communities</p>
           </li>
@@ -42,22 +42,50 @@
       </div>
       <div class="second-menu">
         <ul class="menu">
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/settings.svg" alt="settins icon" class="icon-md" />
             <p>Settings</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/help.svg" alt="support icon" class="icon-md" />
             <p>Support</p>
           </li>
-          <li class="menu-item flex-menu">
+          <li class="menu-item flex">
             <img src="icons/privacy.svg" alt="privacy icon" class="icon-md" />
             <p>Privacy</p>
           </li>
         </ul>
       </div>
     </aside>
-    <header class="header"></header>
+    <header class="header">
+      <div class="searchbar flex">
+        <img src="icons/magnify.svg" alt="search icon" class="icon-md icon-black" />
+        <input type="search" name="search" id="search" class="search" />
+      </div>
+      <div class="user flex">
+        <div class="notification">
+          <img src="icons/bell.svg" alt="notification icon" class="icon-md icon-black" />
+        </div>
+        <div class="avatar">
+          <img src="avatar/men1.png" alt="profile picture" class="avatar" />
+        </div>
+        <div class="username">Morgan Oakley</div>
+      </div>
+      <div class="greeting flex">
+        <div class="avatar">
+          <img src="avatar/men1.png" alt="user profile picture" class="avatar" />
+        </div>
+        <div class="greet-user">
+          <p>Hi there,</p>
+          <h2>Morgan Oakley (@morgan)</h2>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" class="button">New</button>
+        <button type="button" class="button">Upload</button>
+        <button type="button" class="button">Share</button>
+      </div>
+    </header>
     <section class="main">
       <section class="project"></section>
       <aside class="sidebar"></aside>
