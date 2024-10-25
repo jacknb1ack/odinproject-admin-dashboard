@@ -92,14 +92,18 @@ body {
   align-items: center;
 }
 
+.title {
+  font-weight: 700;
+}
+
 /* icon styling */
 .icon-large {
-  width: 1.5rem;
+  width: 2rem;
   filter: invert(100%) sepia(19%) saturate(0%) hue-rotate(332deg) brightness(101%) contrast(101%);
 }
 
 .icon-md {
-  width: 1rem;
+  width: 1.4rem;
   filter: invert(100%) sepia(19%) saturate(0%) hue-rotate(332deg) brightness(101%) contrast(101%);
 }
 
@@ -113,13 +117,23 @@ body {
   background-color: #0ea8f1;
   display: grid;
   color: aliceblue;
-  gap: 1rem;
 
+  padding: 30px 0;
   grid-area: aside;
+}
+
+.nav-bar .title {
+  margin-left: 30px;
+  font-size: 1.5rem;
 }
 
 nav ul {
   padding: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 nav li {
   padding-left: 30px;
@@ -145,10 +159,11 @@ a:visited {
   padding-left: 15px;
   padding-top: 15px;
   grid-template-areas: "search user" "greeting button";
-  gap: 1rem;
+  gap: 5px;
 
   grid-area: header;
   justify-items: auto;
+  box-shadow: 0 2px 10px grey;
 }
 
 .searcbar {
@@ -162,6 +177,14 @@ a:visited {
 .user {
   grid-area: user;
   justify-self: center;
+}
+
+.username {
+  font-weight: 700;
+}
+
+.user-big {
+  font-size: 1.4rem;
 }
 
 .greeting {
